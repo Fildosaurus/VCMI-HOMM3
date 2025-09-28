@@ -5,6 +5,22 @@ This file automatically tracks all changes made to the VCMI codebase during deve
 ## Change Log
 ### 2025-09-28 - Development Update
 
+**Time:** 2025-09-28 18:44:41
+
+**Changes Made:**
+**Files Modified:**
+- `GIT/changes.md.bak`
+- `Mods/AK47_Warrior/Content/config/ak47_artifact.json`
+- `Mods/AK47_Warrior/Content/config/ak47_warrior.json`
+- `Mods/AK47_Warrior/Content/config/commando_hero.json`
+- `Mods/AK47_Warrior/Content/config/modern_warrior_class.json`
+- `Mods/AK47_Warrior/README.md`
+- `Mods/AK47_Warrior/mod.json`
+
+---
+
+### 2025-09-28 - Development Update
+
 **Time:** 2025-09-28 18:39:36
 
 **Changes Made:**
