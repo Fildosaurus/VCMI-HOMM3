@@ -1,0 +1,56 @@
+{
+	"commandoHero": {
+		"name": "Kommando",
+		"description": "Elitní voják specializující se na moderní zbraně. Vždy začína s AK47 a jednotkami moderních válečníků.",
+		"biography": "Veterán mnoha konfliktů, který jako první objevil tajemství kombinace magie a moderních zbraní. Jeho AK47 je legendární zbraň, která nikdy neopustí jeho bok.",
+		"class": "modernWarrior",
+		"gender": "male",
+		"race": "human",
+		"army": [
+			{
+				"creature": "ak47Warrior",
+				"min": 8,
+				"max": 12
+			},
+			{
+				"creature": "archer",
+				"min": 5,
+				"max": 8
+			}
+		],
+		"artifacts": [
+			"ak47Rifle"
+		],
+		"primarySkills": {
+			"attack": 3,
+			"defence": 2,
+			"spellpower": 0,
+			"knowledge": 1
+		},
+		"secondarySkills": {
+			"archery": "advanced",
+			"tactics": "basic"
+		},
+		"spells": [],
+		"specialties": [
+			{
+				"type": "CREATURE",
+				"creature": "ak47Warrior",
+				"bonuses": [
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": "attack",
+						"val": 1,
+						"valueType": "ADDITIVE_VALUE"
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": "defence",
+						"val": 1,
+						"valueType": "ADDITIVE_VALUE"
+					}
+				]
+			}
+		]
+	}
+}

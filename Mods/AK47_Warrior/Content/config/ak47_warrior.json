@@ -1,0 +1,47 @@
+{
+	"ak47Warrior": {
+		"name": {
+			"singular": "AK47 Válečník",
+			"plural": "AK47 Válečníci"
+		},
+		"description": "Moderní válečník vyzbrojený automatickou puškou AK47. Rychlý, smrtící a nebojácný v boji.",
+		"cost": {
+			"gold": 150
+		},
+		"fightValue": 180,
+		"aiValue": 200,
+		"growth": 8,
+		"hitPoints": 25,
+		"speed": 8,
+		"attack": 12,
+		"defence": 8,
+		"shots": 24,
+		"damage": {
+			"min": 6,
+			"max": 10
+		},
+		"faction": "neutral",
+		"level": 3,
+		"abilities": {
+			"shooter": {},
+			"noMeleeRetaliation": {},
+			"doubleAttack": {
+				"type": "ADDITIONAL_ATTACK",
+				"val": 1,
+				"description": "AK47 střelba: může útočit dvakrát za kolo díky automatické zbrani"
+			}
+		},
+		"graphics": {
+			"animation": "CSKEL.DEF",
+			"map": "CSKEL.DEF"
+		},
+		"sound": {
+			"attack": "BOWATTK.wav",
+			"defend": "DEFEND.wav",
+			"killed": "KILLED.wav",
+			"move": "MOVE.wav",
+			"shoot": "ARCHSHOT.wav",
+			"wince": "WINCE.wav"
+		}
+	}
+}

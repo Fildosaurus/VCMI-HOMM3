@@ -1,0 +1,20 @@
+{
+	"name": "AK47 Warrior Mod",
+	"description": "Přidává novou postavu s AK47, která je dostupná hned ze začátku hry",
+	"version": "1.0.0",
+	"modType": "Gameplay",
+	"contact": "https://github.com/Fildosaurus/VCMI-HOMM3",
+	"author": "Fildosaurus",
+	"creatures": {
+		"ak47Warrior": "Content/config/ak47_warrior.json"
+	},
+	"artifacts": {
+		"ak47Rifle": "Content/config/ak47_artifact.json"
+	},
+	"heroClasses": {
+		"modernWarrior": "Content/config/modern_warrior_class.json"
+	},
+	"heroes": {
+		"commandoHero": "Content/config/commando_hero.json"
+	}
+}

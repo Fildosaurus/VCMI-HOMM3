@@ -1,0 +1,23 @@
+{
+	"modernWarrior": {
+		"name": "Moderní Válečník",
+		"description": "Specialist na moderní zbraně a taktiku. Ovládá pokročilé bojové techniky a moderní výzbroj.",
+		"primarySkills": {
+			"attack": 2,
+			"defence": 1,
+			"spellpower": 0,
+			"knowledge": 1
+		},
+		"secondarySkills": {
+			"archery": 3,
+			"tactics": 2,
+			"leadership": 1
+		},
+		"tavern": {
+			"chance": 15
+		},
+		"commander": "ak47Warrior",
+		"defaultTerrain": "grass",
+		"affinity": "might"
+	}
+}

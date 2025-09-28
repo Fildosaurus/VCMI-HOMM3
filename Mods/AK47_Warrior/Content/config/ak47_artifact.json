@@ -1,0 +1,51 @@
+{
+	"ak47Rifle": {
+		"name": "Kalašnikov AK47",
+		"description": "Legendární automatická puška sovětské výroby. Poskytuje devastující palebnou sílu a zvyšuje bojové schopnosti nositele.",
+		"text": {
+			"description": "Zvyšuje útok +5, obranu +2, rychlost +3. Umožňuje střelbu bez postihů na dálku. Uděluje dvojitý útok."
+		},
+		"type": "WEAPON",
+		"class": "MAJOR",
+		"value": 8000,
+		"bonuses": [
+			{
+				"type": "PRIMARY_SKILL",
+				"subtype": "attack",
+				"val": 5,
+				"description": "AK47 zvyšuje přesnost a sílu útoků"
+			},
+			{
+				"type": "PRIMARY_SKILL",
+				"subtype": "defence",
+				"val": 2,
+				"description": "Zkušenost s moderní zbraní zvyšuje taktické myšlení"
+			},
+			{
+				"type": "PRIMARY_SKILL",
+				"subtype": "speed",
+				"val": 3,
+				"description": "Lehká automatická zbraň umožňuje rychlejší pohyb"
+			},
+			{
+				"type": "SHOOTS",
+				"val": 50,
+				"description": "AK47 má velkou zásobu munice"
+			},
+			{
+				"type": "NO_DISTANCE_PENALTY",
+				"description": "Moderní zbraň má vysokou přesnost na všechny vzdálenosti"
+			},
+			{
+				"type": "ADDITIONAL_ATTACK",
+				"val": 1,
+				"description": "Automatická puška umožňuje rychlé následné výstřely"
+			}
+		],
+		"graphics": {
+			"iconIndex": 0,
+			"image": "ARTIFACT.DEF",
+			"large": "ARTIFBON.PCX"
+		}
+	}
+}
