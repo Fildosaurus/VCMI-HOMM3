@@ -3,6 +3,18 @@
 This file automatically tracks all changes made to the VCMI codebase during development.
 
 ## Change Log
+### 2025-09-28 - Development Update
+
+**Time:** 2025-09-28 18:39:36
+
+**Changes Made:**
+**Files Modified:**
+- `.githooks/pre-commit`
+- `CLAUDE.md`
+- `GIT/changes.md`
+
+---
+
 
 ### 2025-09-28 - Initial Setup
 
