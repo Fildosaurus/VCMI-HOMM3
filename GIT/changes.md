@@ -1,0 +1,75 @@
+# VCMI Development Changes Log
+
+This file automatically tracks all changes made to the VCMI codebase during development.
+
+## Change Log
+### 2025-09-28 - Development Update
+
+**Time:** 2025-09-28 18:39:36
+
+**Changes Made:**
+**Files Modified:**
+- `.githooks/pre-commit`
+- `CLAUDE.md`
+- `GIT/changes.md`
+
+---
+
+
+### 2025-09-28 - Initial Setup
+
+**Time:** $(date)
+
+**Changes Made:**
+1. ✅ **Created CLAUDE.md file**
+   - Comprehensive development guide for Claude Code
+   - Build commands for Windows, Linux, CMake presets
+   - Architecture overview (three-tier: lib/client/server)
+   - Directory structure documentation
+   - Code style guidelines
+   - Testing procedures
+   - Platform-specific notes
+
+2. ✅ **Set up Git repository structure**
+   - Added private remote: `https://github.com/Fildosaurus/VCMI-HOMM3.git`
+   - Created branch: `moje-upravy`
+   - Configured automatic change tracking
+
+3. ✅ **Established development environment**
+   - Analyzed VCMI project structure
+   - Documented key components and systems
+   - Set up todo tracking system
+
+**Files Modified:**
+- `CLAUDE.md` (NEW) - Development guide
+- `GIT/changes.md` (NEW) - This change log
+
+**Next Steps:**
+- Ready for code modifications
+- All changes will be automatically logged here
+- Private repository ready for development
+
+---
+
+## Template for Future Changes
+
+### YYYY-MM-DD - [Change Description]
+
+**Time:** $(date)
+
+**Changes Made:**
+- Description of what was changed
+- Files affected
+- Reasons for changes
+
+**Files Modified:**
+- `path/to/file.ext` - Description of changes
+
+**Testing:**
+- [ ] Build successful
+- [ ] Tests passing
+- [ ] No regressions
+
+---
+
+*This file is automatically maintained to track all development changes.*

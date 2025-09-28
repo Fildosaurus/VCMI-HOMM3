@@ -1,0 +1,55 @@
+#!/bin/bash
+# VCMI Automatic Change Tracking Hook
+# This hook automatically updates GIT/changes.md with commit information
+
+# Get current date and time
+DATETIME=$(date "+%Y-%m-%d %H:%M:%S")
+DATE=$(date "+%Y-%m-%d")
+
+# Get list of modified files
+MODIFIED_FILES=$(git diff --cached --name-only)
+
+# Get commit message (if available)
+COMMIT_MSG=""
+if [ -f .git/COMMIT_EDITMSG ]; then
+    COMMIT_MSG=$(head -n 1 .git/COMMIT_EDITMSG)
+fi
+
+# Create changes entry
+CHANGES_FILE="GIT/changes.md"
+
+# Create backup
+cp "$CHANGES_FILE" "$CHANGES_FILE.bak"
+
+# Create new entry
+echo "### $DATE - Development Update" >> temp_changes.md
+echo "" >> temp_changes.md
+echo "**Time:** $DATETIME" >> temp_changes.md
+echo "" >> temp_changes.md
+echo "**Changes Made:**" >> temp_changes.md
+
+# Add modified files
+echo "**Files Modified:**" >> temp_changes.md
+while IFS= read -r file; do
+    if [ ! -z "$file" ]; then
+        echo "- \`$file\`" >> temp_changes.md
+    fi
+done <<< "$MODIFIED_FILES"
+
+echo "" >> temp_changes.md
+echo "---" >> temp_changes.md
+echo "" >> temp_changes.md
+
+# Insert at the right place in changes.md (after the "## Change Log" line)
+head -n 5 "$CHANGES_FILE" > temp_full.md
+cat temp_changes.md >> temp_full.md
+tail -n +6 "$CHANGES_FILE" >> temp_full.md
+
+# Replace the original file
+mv temp_full.md "$CHANGES_FILE"
+rm temp_changes.md
+
+# Add the changes file to the commit
+git add "$CHANGES_FILE"
+
+echo "✅ Automatically updated $CHANGES_FILE with change tracking"
