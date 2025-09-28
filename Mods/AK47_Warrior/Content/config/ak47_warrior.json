@@ -29,6 +29,10 @@
 				"type": "ADDITIONAL_ATTACK",
 				"val": 1,
 				"description": "AK47 střelba: může útočit dvakrát za kolo díky automatické zbrani"
+			},
+			"special": {
+				"type": "NON_LIVING",
+				"description": "Speciální jednotka bez standardní combat animace"
 			}
 		},
 		"graphics": {
